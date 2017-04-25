@@ -5,6 +5,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "es6-promise": "^4.0.5",
+    "firebase": "^3.8.0",
     "lodash": "^4.15.0",
     "node-sass": "^3.4.2",
     "normalize.css": "^6.0.0",

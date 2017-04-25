@@ -89,7 +89,8 @@ module.exports = {
 			selectors: 	paths.appSrc + '/selectors',
 			styles: 		paths.appSrc + '/styles',
 			composers: 	paths.appSrc + '/composers',
-			constants: 	paths.appSrc + '/constants'
+			constants: 	paths.appSrc + '/constants',
+			firebaseApi: 	paths.appSrc + '/firebaseApi'
     },
   },
 
