@@ -4,7 +4,7 @@ import './styles.scss'
 
 
 //const inDevelopement = process.env.NODE_ENV === 'development'
-export default({name, imgUrl, defaultText, password}) => {
+export default({name, imgUrl, defaultText, password, onInputChange}) => {
 
 	const styleObj = {
 		backgroundImage: 'url('+imgUrl+')'
@@ -12,7 +12,12 @@ export default({name, imgUrl, defaultText, password}) => {
 
 	return(
 		<fb className='inputMinimalMain'>
-			<input type={password ? "password" : "text"} name={name} style={styleObj} placeholder={defaultText}/>
+			<input
+				type={password ? "password" : "text"}
+				name={name} style={styleObj}
+				placeholder={defaultText}
+				onChange={(e)=>onInputChange(e.target.value)}
+			/>
 		</fb>
 	)
 }
