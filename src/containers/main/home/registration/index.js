@@ -31,40 +31,40 @@ export default class Registration extends PureComponent{
 		const password = this.state.password
 		auth.createUserWithEmailAndPassword(email, password)
 			.catch(e => console.log(e.message))
-			.then(user => user && createNewAccountOnDB(user.uid, pharmacyName))
+			.then(user => user && createNewAccountOnDB(user.uid, pharmacyName, email))
 	}
 
 	render = () =>{
 		return(
-			<fb id='registrationMain'>
-				<fb id='registrationHead'>Jetzt registrieren</fb>
-				<fb id='registrationBody'>
-					<fb id='iWrapperPharmacyName' className='inputRegElement'>
+			<div id='registrationMain'>
+				<div id='registrationHead'>Jetzt registrieren</div>
+				<div id='registrationBody'>
+					<div id='iWrapperPharmacyName' className='inputRegElement'>
 						<InputMinimal
 							onInputChange={(inp)=>this.setState({pharmacyName: inp})}
 							imgUrl={userIcon}
 							defaultText='Name der Apotheke'
 							value={this.state.pharmacyName}/>
-					</fb>
-					<fb id='iWrapperPharmacyEmail' className='inputRegElement'>
+					</div>
+					<div id='iWrapperPharmacyEmail' className='inputRegElement'>
 						<InputMinimal
 							onInputChange={(inp)=>this.setState({email: inp})}
 							imgUrl={emailIcon}
 							defaultText='Email'
 							value={this.state.email}/>
-					</fb>
-					<fb id='iWrapperPassword' className='inputRegElement' onKeyDown={this.onKeyDownPW}>
+					</div>
+					<div id='iWrapperPassword' className='inputRegElement' onKeyDown={this.onKeyDownPW}>
 						<InputMinimal
 							onInputChange={(inp)=>this.setState({password: inp})}
 							imgUrl={lockIcon}
 							defaultText='Passwort'
 							value={this.state.password}
 							password={true} />
-					</fb>
-					<fb id='registrationSubmitButton' onClick={this.regButtonClicked}>Registrieren</fb>
-					<fb id='iWrapperCaptcha'></fb>
-				</fb>
-			</fb>
+					</div>
+					<div id='registrationSubmitButton' onClick={this.regButtonClicked}>Registrieren</div>
+					<div id='iWrapperCaptcha'></div>
+				</div>
+			</div>
 		)
 	}
 }

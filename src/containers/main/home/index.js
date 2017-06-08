@@ -6,13 +6,13 @@ import './styles.scss'
 
 //const inDevelopement = process.env.NODE_ENV === 'development'
 export default() => (
-	<fb id='homeMain'>
-		<fb id='homeLeft'>
-			<fb id='homeImageTitle'>Apotower <br/>bringt <br/>Ordnung <br/>in <br/>das <br/>Chaos</fb>
-			<fb id='homeImageWrapper'><img src={homeImage} alt='homeImage' width='244' height='208'/></fb>
-		</fb>
-		<fb id='homeRight'>
+	<div id='homeMain'>
+		<div id='homeLeft'>
+			<div id='homeImageTitle'>Apotower <br/>bringt <br/>Ordnung <br/>in <br/>das <br/>Chaos</div>
+			<div id='homeImageWrapper'><img src={homeImage} alt='homeImage' width='244' height='208'/></div>
+		</div>
+		<div id='homeRight'>
 			<Registration />
-		</fb>
-	</fb>
+		</div>
+	</div>
 )

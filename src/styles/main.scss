@@ -1,5 +1,9 @@
-@import 'fonts.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,100,300,700,900');
 
-fb{
+html{
+	font-family: Roboto
+}
+
+div{
 	display: flex;
 }

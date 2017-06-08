@@ -11,13 +11,13 @@ export default({name, imgUrl, defaultText, password, onInputChange}) => {
 	}
 
 	return(
-		<fb className='inputMinimalMain'>
+		<div className='inputMinimalMain'>
 			<input
 				type={password ? "password" : "text"}
 				name={name} style={styleObj}
 				placeholder={defaultText}
 				onChange={(e)=>onInputChange(e.target.value)}
 			/>
-		</fb>
+		</div>
 	)
 }

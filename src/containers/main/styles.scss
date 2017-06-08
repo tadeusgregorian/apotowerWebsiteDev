@@ -4,7 +4,11 @@ body{
 	font-family: 'roboto';
 	height:100vh;
 
-	content{
+	>div, >div>div{
+		width: 100%;
+	}
+
+	#content{
 		margin-top: 46px;
 		flex-direction: column;
 		width: 100%;
