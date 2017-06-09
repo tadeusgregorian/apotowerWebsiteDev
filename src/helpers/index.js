@@ -27,7 +27,7 @@ export const getInitialGroups = () => {
 }
 
 const getInitialBranch = (pharmacyName) => {
-	return {initialBranch: {ID: 'initialBranch', name: pharmacyName, notDeletable: true}}
+	return {Z03930initialBranchID: {ID: 'Z03930initialBranchID', name: pharmacyName, notDeletable: true}}
 }
 
 const getInitialUser = (branchID) => {
@@ -37,7 +37,7 @@ const getInitialUser = (branchID) => {
 		nameInitials: 'MaxM',
 		color: '#2ecc71',
 		isAdmin: true,
-		branches: {initialBranch: 1}
+		branches: {Z03930initialBranchID: 1}
 	}}
 }
 

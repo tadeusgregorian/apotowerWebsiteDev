@@ -46,7 +46,7 @@ export default class Registration extends PureComponent{
 							defaultText='Name der Apotheke'
 							value={this.state.pharmacyName}/>
 					</div>
-					<div id='iWrapperPharmacyEmail' className='inputRegElement'>
+					<div id='iWrapperPharmacyEmail' className='inputRegElement' data-balloon="Email-Adresse der Apotheke" data-balloon-pos="up">
 						<InputMinimal
 							onInputChange={(inp)=>this.setState({email: inp})}
 							imgUrl={emailIcon}

@@ -5,6 +5,7 @@ import { setAuthStateChangeListener } from 'firebaseApi'
 
 
 import 'styles/main.scss'
+import 'styles/baloon.css'
 import './styles.scss'
 
 //const inDevelopement = process.env.NODE_ENV === 'development'
