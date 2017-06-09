@@ -3,21 +3,22 @@ import Home from './home'
 import Topbar from './topbar'
 import { setAuthStateChangeListener } from 'firebaseApi'
 
-
+import 'normalize.css/normalize.css' // needed for material-ui i think
 import 'styles/main.scss'
 import 'styles/baloon.css'
 import './styles.scss'
+
 
 //const inDevelopement = process.env.NODE_ENV === 'development'
 export default() => {
 	setAuthStateChangeListener()
 
 	return(
-		<div style={{width: '100%'}}>
+		<fb style={{width: '100%'}}>
 			<Topbar />
-			<div id='content'>
+			<fb id='content'>
 				<Home />
-			</div>
-		</div>
+			</fb>
+		</fb>
 	)
 }

@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,100,300,700,900');
 
+@import "icons.scss";
+@import "baloon.css";
+
 html{
-	font-family: Roboto
+	font-family: 'Roboto';
 }
 
 div{
+	font-family: "Roboto", sans-serif !important;
+}
+
+fb{
 	display: flex;
+}
+
+html, body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+strong{
+	font-weight: 400
 }
